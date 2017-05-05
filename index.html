@@ -1,0 +1,104 @@
+<!-- howdy/templates/index.html -->
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+    	<meta name="author" content="">
+        <link href="{% static 'css/bootstrap-fluid-adj.css' %}" rel="stylesheet">
+    	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    	<link href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet">
+
+        <title>Comic Book Database Homepage</title>
+    </head>
+    <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Comic Book Database Homepage</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="/About/">About</a></li>
+              <li><a href="/Collection/">My Collections</a></li>
+              <li><a href="/Search/">Database Search</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Signin/">Sign In</a></li>
+                  <li><a href="http://www.google.com">Google</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Selling/Buying Links</li>
+                  <li><a href="http://www.amazon.com">Amazon</a></li>
+                  <li><a href="http://www.ebay.com">Ebay</a></li>
+                  <li><a href="http://www.ha.com">Heritage Auctions</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Welcome to the Online Comic Book Database and Interactive Collection Creator!</h1>
+        <p>Greetings Heroes! Below you can find descriptions of the different fuctions of this website:</p>
+        <p><a class="btn btn-primary btn-lg" href="/" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Comic Book Database Search</h2>
+          <p>We are currently working on the database function of the site. Soon you will be able to search for your favorite comics to add to your collections!</p>
+          <p><a class="btn btn-success" href="/Search/" role="button">Database Search &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Manage your Collections</h2>
+          <p>Once the database search is up and running, you will be able to search the database for comics you have acquired and add them to an online collection!</p>
+          <p><a class="btn btn-success" href="/Collection/" role="button">My Collections &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>And Much, Much More!</h2>
+          <p>We are still figuring out what else we have planned for this site so, stay tuned for updates!</p>
+          <p><a class="btn btn-success" href="/About/" role="button">More &raquo;</a></p>
+        </div>
+      </div>
+
+    <p>
+    	<img src="https://media.giphy.com/media/Q7HsSEI4uKWFW/giphy.gif" alt="Input Funny Gif Here" style="width:750px;height:450px;"/>
+    </p>
+    
+    <h2>
+    Click the Below Buttons to Access the Other Pages of the Site:
+    </h2>
+
+    <div align="Left">
+        <a href="/Search/"><input type="button" class="btn" value="Database Search" /></a>
+        <a href="/Collection/"><input type="button" class="btn" value="Collections" /></a>
+        <a href="/About/"><input type="button" class="btn" value="About Us" /></a>
+
+    <footer>
+    	<div class="container">
+        	<p> Lasted Edited On: 4/26/2017 </p>
+    	</div>
+	</footer>
+
+    	<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
